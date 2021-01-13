@@ -1,0 +1,35 @@
+{
+  "name": "video-dl",
+  "version": "1.0.0",
+  "description": "Youtube and Facebook Downloader API.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskian/video-dl.git"
+  },
+  "keywords": [
+    "youtube",
+    "videos",
+    "api",
+    "facebook",
+    "downloader"
+  ],
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskian/video-dl/issues"
+  },
+  "homepage": "https://github.com/mskian/video-dl#readme",
+  "dependencies": {
+    "@sindresorhus/slugify": "^1.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "got": "^11.8.1",
+    "ytdl-core": "^4.4.3"
+  }
+}
