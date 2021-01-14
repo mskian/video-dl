@@ -86,7 +86,7 @@ app.get('/hd/:video', function(req, res) {
                 replacement: '-',
                 remove: /[*+~.()'"!:@]/g,
                 lower: true,
-                strict: false
+                strict: true
             });
             res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
             res.header('Content-type: octet/stream');
@@ -115,7 +115,7 @@ app.get('/low/:video', function(req, res) {
                 replacement: '-',
                 remove: /[*+~.()'"!:@]/g,
                 lower: true,
-                strict: false
+                strict: true
             });
             res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
             res.header('Content-type: octet/stream');
