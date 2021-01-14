@@ -93,6 +93,38 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fvideo-dl)  
 
+## Extract Downloadable Link ✂
+
+Extract Downloadable Link From Facebook
+
+- Download link (Low and Hight)
+- Title
+- slug (used for file naming)
+
+`lib/fbvid.js`
+
+```js
+const fbvid = require('./lib/fbvid.js');
+
+const video = 'https://www.facebook.com/LyricsEngsongs/videos/321854395918041/';
+
+fbvid.low(video).then(vid => {
+  console.log(vid)
+});
+
+fbvid.high(video).then(vid => {
+  console.log(vid);
+});
+
+fbvid.title(video).then(vid => {
+    console.log(vid);
+});
+
+fbvid.slug(video).then(vid => {
+    console.log(vid);
+});
+```
+
 ## Disclaimer ⚠
 
 - Use this as your Personal Tool if you are going to this on Production Please read the terms and    Policy from Facebook & Youtube.
