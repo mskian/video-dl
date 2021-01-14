@@ -81,11 +81,13 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 
 ## Free Deploy 🍔
 
-- Deploy on Heroku
+- Deploy on Heroku - `app.js`
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)  
 
-- Deploy on Vercel
+- Deploy on Vercel- `index.js`
+
+⚠ Vercel having RUNTIME Failed issue while downloading the youtube Video - <https://github.com/vercel/vercel/issues/3825>
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fvideo-dl)  
 
