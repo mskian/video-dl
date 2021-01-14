@@ -5,13 +5,9 @@ const slugify = require('slugify');
 const ytdl = require('ytdl-core');
 
 const app = express();
-const port = 4000;
+const port = 3000;
 
 app.use(cors());
-
-app.listen(port, () => {
-    console.log(`Server running port ${port}`);
-});
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Sample URL: http://localhost:4000/audio/audio?url=https://www.youtube.com/watch?v=bKDdT_nyP54  //
@@ -135,4 +131,8 @@ app.use('/', function(req, res) {
         error: 1,
         message: 'Enter a valid URL'
     });
+});
+
+app.listen(port, function () {
+    console.log('listening on port ' + port);
 });
