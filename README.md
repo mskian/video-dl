@@ -100,6 +100,6 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 - We are not Affiliate or Authorized with Facebook - This Tool only for Educational Purpose.
 - The videos or images that you downloaded to your System or Mobile directly from their respective CDN servers.
 
-LICENSE ☑
+### LICENSE ☑
 
 MIT
