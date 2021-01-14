@@ -63,7 +63,7 @@ http://localhost:4000/low/video?url=https://www.facebook.com/LyricsEngsongs/vide
 ## Try Online 🌐
 
 - Heroku - <https://sandl.herokuapp.com/>
-- Vercel - <https://san-dl.vercel.app/>
+- Vercel - <https://sandl.vercel.app/>
 
 ## Formats 📼
 
