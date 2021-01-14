@@ -79,6 +79,12 @@ ytdl(url, {
 
 For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-options>
 
+## Deploy
+
+- Deploy on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)
+
 ## Disclaimer ⚠
 
 - Use this as your Personal Tool if you are going to this on Production Please read the terms and    Policy from Facebook & Youtube.
