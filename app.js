@@ -2,14 +2,39 @@ const express = require('express');
 const cors = require('cors');
 const got = require('got');
 const slugify = require('slugify');
+const path = require('path');
 const ytdl = require('ytdl-core');
 
 const app = express();
 const port = process.env.PORT || 4000;
+app.use(express.static(path.join(__dirname, '/files')));
 app.use(cors());
 
 app.listen(port, function () {
     console.log('listening on port ' + port);
+});
+
+function customHeaders(req, res, next) {
+    app.disable('x-powered-by');
+    res.setHeader('X-Powered-By', 'Video Downloader');
+    next();
+}
+
+app.use(customHeaders);
+
+app.get('/', function(req, res) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
+    res.header('Access-Control-Allow-Methods', 'GET');
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+});
+
+app.get('/robots.txt', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/robots.txt'));
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

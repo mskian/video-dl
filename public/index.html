@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Free Video Downloader 📥</title>
+    <meta name="description" content="Video Downloader - Download Facebook Video and Youtube Video and Audio." />
+    <link rel="shortcut icon" href="/Icon-48.png" type="image/png" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#3949AB">
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <link rel="canonical" href="/" />
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<style>
+  body {
+    background-color: #ffffff;
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+  }
+h1{font-weight:600;font-size:33px;}
+h2{font-weight:600;font-size:28px;}
+h3{font-weight:600;font-size:23px;}
+h4{font-weight:600;font-size:18px;}
+h5{font-weight:600;font-size:15px;}
+  .navbar {
+    background-color:#dd2840;
+}
+.navbar-nav > li{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+a, a:visited{color:#4a59df; text-decoration:none}
+a:hover{color:#4a59df; text-decoration:underline}
+a:focus, a:hover, a:active{outline:none}
+.btn {
+    border-radius:9999px
+}
+.btn-default-outline{
+    background-color:transparent;
+    color:#fff;
+    border-color:#FFF
+}
+.btn-default-outline:hover,.btn-default-outline:active,.btn-default-outline:focus{
+    background-color:#FFF;
+    color:#0875aa
+}
+.btn {
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+.btn {
+        font-weight: 700;
+        font-size:14px;
+        color: #fff;
+    }
+p {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    word-wrap: break-word;
+    letter-spacing: 0;
+    color: #221f1f;
+}
+a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+ }
+blockquote {
+background: #B9DFF1;
+margin: 0px 50px 0px 50px;
+padding: 30px 30px 30px 50px;
+color:#333;
+border-radius:15px;
+font-size: 18px;
+font-family: 'Fira Code', monospace;
+font-weight: bold;
+line-height: 1.6em;
+box-shadow: 4px 4px 10px #e3e3e3;
+}
+.footer {
+    margin-top: 2.6em;
+    padding: 20px 0 26px
+}
+.footer-text p {
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #36383f
+}
+.home-section {
+    margin:3% auto 0;
+}
+pre {
+    overflow-x:auto;
+    margin:1.5em 0 3em;
+    padding:20px;
+    max-width:100%;
+    border:1px solid #000;
+    color:#e5eff5;
+    font-size: 14px;
+    line-height:1.5em;
+    background:#0e0f11;
+    border-radius:5px
+}
+pre code{
+    padding:0;
+    font-size:inherit;
+    line-height:inherit;
+    background:transparent
+}
+pre code *{
+    color:inherit
+}
+.msg-box {
+border: 2px solid rgb(255, 204, 0);
+padding: 15px 20px;
+color: black;
+background-color: rgb(255, 255, 153);
+border-radius:20px 20px 0 20px;
+font-size: 16px;
+} 
+.msg-box a {
+    color: #000000;
+    border-bottom: 1px dotted;
+}
+header {
+  background-color: #673AB7;
+  padding: 110px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 110px 0 100px;
+  }
+}
+.home-cnt {
+    color: #ffffff;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.table-striped {
+    border: 0
+}
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    padding: 10px 15px;
+    font-size:14px;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+}
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    font-weight: 600;
+    font-size:14px;
+    color: #FFF;
+    background-color: #673AB7;
+    padding: 10px 15px
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #F5F5F5
+}
+.table-bordered>tbody>tr>td.strong,
+.table-bordered>thead>tr>th.strong {
+    font-size:14px;
+    font-weight: 600;
+    text-align: left
+}
+.table-holder {
+    background-color: #FFF;
+    border-radius: 4px
+}
+table .btn {
+    padding: 4px 16px
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .sm-hide {
+        display: none
+    }
+    .header-intro {
+        text-align: center
+    }
+}
+@media (max-width: 767px) {
+    .xs-hide {
+        display: none
+    }
+    .header-intro {
+        text-align: center
+    }
+    .table-bordered>tbody>tr>td,
+    .table-bordered>tbody>tr>th,
+    .table-bordered>tfoot>tr>td,
+    .table-bordered>tfoot>tr>th,
+    .table-bordered>thead>tr>td,
+    .table-bordered>thead>tr>th {
+        text-align: center;
+        padding: 5px;
+        font-size:14px;
+        font-weight: 400
+    }
+}
+</style>
+
+<link rel='dns-prefetch' href='//https://mskquotes.herokuapp.com'>
+<link rel='dns-prefetch' href='//code.jquery.com'>
+<link rel='dns-prefetch' href='//stackpath.bootstrapcdn.com'>
+<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+
+</head>
+<body>
+<br>
+<section class="home-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-10 mx-auto">
+
+<br />
+<h2 class="text-center">Try online 🌐</h2>
+<br>
+<blockquote>
+Heroku - <code>https://sandl.herokuapp.com/</code><br>
+Vercel - <code>https://sandl.vercel.app/</code>
+</blockquote>
+<br />
+<br>
+<hr>
+<h4 class="text-center">Youtube Video</h4>
+<br>
+<form method="GET" action="https://sandl.herokuapp.com/video/video?url=" target="_blank">
+<div class="form-group">
+<label class="sr-only">Facebook Video URL</label>
+<input type="input" class="form-control" id="url" name="url" placeholder="URL" required>
+</div>
+<div class="text-center">
+<button type="submit" class="btn btn-success mb-2">📥 Download</button>
+</div>
+</form>
+<br>
+<hr>
+<h4 class="text-center">Youtube Video - Audio</h4>
+<br>
+<form method="GET" action="https://sandl.herokuapp.com/audio/audio?url=" target="_blank">
+<div class="form-group">
+<label class="sr-only">Facebook Video URL</label>
+<input type="input" class="form-control" id="url" name="url" placeholder="URL" required>
+</div>
+<div class="text-center">
+<button type="submit" class="btn btn-success mb-2">📥 Download</button>
+</div>
+</form>
+<br>
+<hr>
+<h4 class="text-center">Facebook Video - HD</h4>
+<br>
+<form method="GET" action="https://sandl.herokuapp.com/hd/video?url=" target="_blank">
+<div class="form-group">
+<label class="sr-only">Facebook Video URL</label>
+<input type="input" class="form-control" id="url" name="url" placeholder="URL" required>
+</div>
+<div class="text-center">
+<button type="submit" class="btn btn-success mb-2">📥 Download</button>
+</div>
+</form>
+<br>
+<hr>
+<h4 class="text-center">Facebook Video - SD</h4>
+<br>
+<form method="GET" action="https://sandl.herokuapp.com/low/video?url=" target="_blank">
+<div class="form-group">
+<label class="sr-only">Facebook Video URL</label>
+<input type="input" class="form-control" id="url" name="url" placeholder="URL" required>
+</div>
+<div class="text-center">
+<button type="submit" class="btn btn-success mb-2">📥 Download</button>
+</div>
+</form>
+<br>
+<hr>
+<br>
+<h2 class="text-center">Example Usage 📦</h2>
+<br>
+<div class="table-holder" style="overflow-x:auto;">
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Youtube Video</th>
+<td>https://sandl.herokuapp.com/video/video?url=https://www.youtube.com/watch?v=bKDdT_nyP54</td>
+</tr>
+<tr>
+<th>Youtube Audio</th>
+<td>https://sandl.herokuapp.com/audio/audio?url=https://www.youtube.com/watch?v=bKDdT_nyP54</td>
+</tr>
+<tr>
+<th>Facebook Video (HD)</th>
+<td>https://sandl.herokuapp.com/hd/video?url=https://www.facebook.com/LyricsEngsongs/videos/321854395918041/</td>
+</tr>
+<tr>
+<th>Facebook Video (SD)</th>
+<td>https://sandl.herokuapp.com/low/video?url=https://www.facebook.com/LyricsEngsongs/videos/321854395918041/</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+        
+</body>
+</html>
