@@ -8,7 +8,7 @@ Video Downloader - Download Facebook Video and Youtube Video and Audio.
 
 - Node.js
 - Yarn Package manager
-- EXpress.js
+- Express.js
 - Node youtube-dl - <https://github.com/fent/node-ytdl-core>
 - Got (HTTP request library) - <https://github.com/sindresorhus/got>
 - CORS (Enable cors for Express.js) - <https://github.com/expressjs/cors>
@@ -58,11 +58,33 @@ http://localhost:4000/hd/video?url=https://www.facebook.com/LyricsEngsongs/video
 http://localhost:4000/low/video?url=https://www.facebook.com/LyricsEngsongs/videos/321854395918041/
 ```
 
+## Formats 📼
+
+- if you want to Change youtube Video & Audio Quality/Formats
+
+```js
+ytdl(url, {
+            format: 'mp3',
+            filter: 'audioonly',
+            quality: 'highest'
+        }).pipe(res);
+```
+
+```js
+ytdl(url, {
+            format: 'mp4',
+            quality: 'highest'
+        }).pipe(res);
+```
+
+For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-options>
+
 ## Disclaimer ⚠
 
-- Use this as your Personal Tool if you are going to this on Production Please read the terms and Policy from Facebook & Youtube.
-- all the Files are served from there CDN servers.
-- Not affiliated with facebook and youtube.
+- Use this as your Personal Tool if you are going to this on Production Please read the terms and    Policy from Facebook & Youtube.
+- This Tool does not Host any Pirated or Copyright content on its server and all
+- We are not Affiliate or Authorized with Facebook - This Tool only for Educational Purpose.
+- The videos or images that you downloaded to your System or Mobile directly from their respective CDN servers.
 
 LICENSE ☑
 
