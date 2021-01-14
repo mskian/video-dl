@@ -79,11 +79,15 @@ ytdl(url, {
 
 For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-options>
 
-## Deploy
+## Free Deploy 🍔
 
 - Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)  
+
+- Deploy on Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fvideo-dl)  
 
 ## Disclaimer ⚠
 
