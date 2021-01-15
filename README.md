@@ -92,7 +92,7 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)  
 
-- Deploy on Vercel- `index.js`
+- Deploy on Vercel - `index.js`
 
 ⚠ Vercel having RUNTIME Failed issue while downloading the youtube Video - <https://github.com/vercel/vercel/issues/3825>
 
