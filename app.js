@@ -113,14 +113,12 @@ app.get('/hd/:video', function(req, res) {
                 lower: true,
                 strict: true
             });
-            res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
-            res.header('Content-type: octet/stream');
             console.log(High_q || 'null');
-            var final = High_q;
-            res.send(final);
+            const final = High_q;
+            res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><P>Your File is Ready <b>' + title + '</b> - For Download Click Download File & save the Video <br> PC Users Right Click From Mouse and Click Save us <br> Mobile Users Long press the Link for Direct download</p> ▶ <a href="'+ final +'" target="_blank"><b>Download File</b></a></body></html>');
         } catch (error) {
-            console.log("null");
-            res.send("HD Not avilable for this Video");
+            console.log('null');
+            res.send('HD Not avilable for this Video');
         }
     })();
 });
@@ -142,14 +140,12 @@ app.get('/low/:video', function(req, res) {
                 lower: true,
                 strict: true
             });
-            res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
-            res.header('Content-type: octet/stream');
             console.log(Low_q || 'null');
-            var final = Low_q;
-            res.send(final);
+            const final = Low_q;
+            res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><P>Your File is Ready <b>' + title + '</b> - For Download Click Download File & save the Video <br> PC Users Right Click From Mouse and Click Save us <br> Mobile Users Long press the Link for Direct download</p> ▶ <a href="'+ final +'" target="_blank"><b>Download File</b></a></body></html>');
         } catch (error) {
-            console.log("null");
-            res.send("SD Not avilable for this Video");
+            console.log('null');
+            res.send('SD Not avilable for this Video');
         }
     })();
 });
