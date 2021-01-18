@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const got = require('got');
-const fs = require('fs');
 const slugify = require('@sindresorhus/slugify');
 const path = require('path');
 const ytdl = require('ytdl-core');
