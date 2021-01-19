@@ -1,6 +1,6 @@
 # Video Downloader 📥
 
-![API Test](https://github.com/mskian/video-dl/workflows/GET%20Test/badge.svg)  
+![API Test](https://github.com/mskian/video-dl/workflows/GET%20Test/badge.svg) [![dependencies Status](https://david-dm.org/mskian/video-dl/status.svg)](https://david-dm.org/mskian/video-dl)  
 
 Video Downloader - Download Facebook Video and Youtube Video and Audio.  
 
