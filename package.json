@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/mskian/video-dl#readme",
   "dependencies": {
-    "@sindresorhus/slugify": "^1.1.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "got": "^11.8.2",

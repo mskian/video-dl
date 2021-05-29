@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const got = require('got');
-const slugify = require('@sindresorhus/slugify');
+const slugify = require('slugify');
 const path = require('path');
 const ytdl = require('ytdl-core');
 
@@ -49,7 +49,12 @@ app.get('/audio/:audio', async (req, res) => {
         }
         let info = await ytdl.getInfo(url);
         console.log(info.videoDetails.title);
-        const title = slugify(info.videoDetails.title);
+        const title = slugify(info.videoDetails.title, {
+            replacement: '-',
+            remove: /[*+~.()'"!:@]/g,
+            lower: true,
+            strict: false
+        });
         res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
         ytdl(url, {
             format: 'mp3',
@@ -74,7 +79,12 @@ app.get('/video/:video', async (req, res) => {
         }
         let info = await ytdl.getInfo(url);
         console.log(info.videoDetails.title);
-        const title = slugify(info.videoDetails.title);
+        const title = slugify(info.videoDetails.title, {
+            replacement: '-',
+            remove: /[*+~.()'"!:@]/g,
+            lower: true,
+            strict: false
+        });
         res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
         ytdl(url, {
             format: 'mp4',
@@ -97,7 +107,12 @@ app.get('/hd/:video', function(req, res) {
             const response = await got(video);
             const High_q = response.body.split('hd_src:"')[1].split('",sd_src:"')[0];
             const seo_title = response.body.split('<title id="pageTitle">')[1].split('</title>')[0];
-            const title = slugify(seo_title);
+            const title = slugify(seo_title, {
+                replacement: '-',
+                remove: /[*+~.()'"!:@]/g,
+                lower: true,
+                strict: true
+            });
             console.log(High_q || 'null');
             const final = High_q;
             res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><P>Your File is Ready <b>' + title + '</b> - For Download Click Download File & save the Video <br> PC Users Right Click From Mouse and Click Save us <br> Mobile Users Long press the Link for Direct download</p> ▶ <a href="'+ final +'" target="_blank"><b>Download File</b></a></body></html>');
@@ -119,7 +134,12 @@ app.get('/low/:video', function(req, res) {
             const response = await got(video);
             const Low_q = response.body.split('sd_src:"')[1].split('",hd_tag')[0];
             const seo_title = response.body.split('<title id="pageTitle">')[1].split('</title>')[0];
-            const title = slugify(seo_title);
+            const title = slugify(seo_title, {
+                replacement: '-',
+                remove: /[*+~.()'"!:@]/g,
+                lower: true,
+                strict: true
+            });
             console.log(Low_q || 'null');
             const final = Low_q;
             res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><P>Your File is Ready <b>' + title + '</b> - For Download Click Download File & save the Video <br> PC Users Right Click From Mouse and Click Save us <br> Mobile Users Long press the Link for Direct download</p> ▶ <a href="'+ final +'" target="_blank"><b>Download File</b></a></body></html>');
