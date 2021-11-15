@@ -1,6 +1,6 @@
 # Video Downloader 📥
 
-![API Test](https://github.com/mskian/video-dl/workflows/GET%20Test/badge.svg) [![dependencies Status](https://david-dm.org/mskian/video-dl/status.svg)](https://david-dm.org/mskian/video-dl)  
+![API Test](https://github.com/mskian/video-dl/workflows/GET%20Test/badge.svg)  
 
 Video Downloader - Download Facebook Video and Youtube Video and Audio.  
 
@@ -88,7 +88,7 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 
 ## Free Deploy 🍔
 
-- Deploy on Heroku - `app.js`
+- Deploy on Heroku - `index.js`
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)  
 

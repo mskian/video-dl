@@ -6,7 +6,7 @@ const path = require('path');
 const ytdl = require('ytdl-core');
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.use(express.static(path.join(__dirname, '/files')));
 app.use(cors());
 
