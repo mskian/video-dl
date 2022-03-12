@@ -32,7 +32,7 @@
     "express": "^4.17.3",
     "got": "^11.8.3",
     "slugify": "^1.6.5",
-    "ytdl-core": "^4.10.0"
+    "ytdl-core": "^4.11.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
