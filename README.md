@@ -97,9 +97,10 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fvideo-dl)  
 
-## Extract Downloadable Link ✂
+## Extract Downloadable Link (Not Working) ✂
 
 Extract Downloadable Link From Facebook
+Due to recent changes in fb this method is not working  
 
 - Download link (Low and Hight)
 - Title
