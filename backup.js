@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const got = require('got');
+const { got } = require('got');
 const slugify = require('slugify');
 const path = require('path');
 const ytdl = require('ytdl-core');
@@ -10,8 +10,8 @@ const port = process.env.PORT || 4000;
 app.use(express.static(path.join(__dirname, '/files')));
 app.use(cors());
 
-app.listen(port, function () {
-    console.log('listening on port ' + port);
+app.listen(port, () => {
+    console.log(`Server running port ${port}`);
 });
 
 function customHeaders(req, res, next) {

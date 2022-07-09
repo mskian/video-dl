@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "test": "node test.js",
-    "dev": "nodemon index.js",
-    "start": "node index.js",
-    "heroku": "node app.js"
+    "dev": "nodemon index.js --ext '*'",
+    "start": "node index.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mskian/video-dl.git"
@@ -30,7 +30,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "got": "^11.8.5",
+    "got": "^12.1.0",
     "slugify": "^1.6.5",
     "ytdl-core": "^4.11.0"
   },

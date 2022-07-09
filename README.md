@@ -63,7 +63,6 @@ http://localhost:4000/low/video?url=https://www.facebook.com/LyricsEngsongs/vide
 ## Try Online 🌐
 
 - Heroku - <https://sandl.herokuapp.com/>
-- Vercel - <https://sandl.vercel.app/>
 
 ## Formats 📼
 
@@ -132,7 +131,7 @@ fbvid.slug(video).then(vid => {
 
 ## Disclaimer ⚠
 
-- Use this as your Personal Tool if you are going to this on Production Please read the terms and    Policy from Facebook & Youtube.
+- Use this as your Personal Tool if you are going to this on Production Please read the terms and Policy from Facebook & Youtube.
 - This Tool does not Host any Pirated or Copyright content on its server and all
 - We are not Affiliate or Authorized with Facebook - This Tool only for Educational Purpose.
 - The videos or images that you downloaded to your System or Mobile directly from their respective CDN servers.
