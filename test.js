@@ -1,6 +1,6 @@
-const got = require('got');
-const slugify = require('slugify');
-const ytdl = require('ytdl-core');
+import got from 'got';
+import slugify from 'slugify';
+import ytdl from 'ytdl-core';
 
 const video = "https://www.facebook.com/LyricsEngsongs/videos/321854395918041/";
 const YT_VIDEO = "https://www.youtube.com/watch?v=bKDdT_nyP54";
