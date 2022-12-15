@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
         res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
         ytdl(url, {
             format: 'mp4',
-            quality: 'highest'
+            quality: 'lowest'
         }).pipe(res);
 
     } catch (err) {
