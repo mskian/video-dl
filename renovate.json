@@ -10,9 +10,6 @@
 		"enabled": false,
 		"automerge": false
 	},
-	"node": {
-		"supportPolicy": ["lts_active"]
-	},
 	"labels": [
 		"renovate"
 	],
