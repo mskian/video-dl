@@ -36,6 +36,6 @@
     "ytdl-core": "^4.11.4"
   },
   "devDependencies": {
-    "nodemon": "^3.0.0"
+    "nodemon": "^3.0.1"
   }
 }
