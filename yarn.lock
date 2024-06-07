@@ -427,10 +427,10 @@ glob-parent@~5.1.2:
   dependencies:
     is-glob "^4.0.1"
 
-got@^14.3.0:
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/got/-/got-14.3.0.tgz#3b889f9b2ed0e5a312077d8564a3ac6662c483ef"
-  integrity sha512-vZkrXdq5BtPWTXqvjXSpl6zky3zpHaOVfSug/RfFHu3YrtSsvYzopVMDqrh2do77WnGoCSSRCHW25zXOSAQ9zw==
+got@^14.4.1:
+  version "14.4.1"
+  resolved "https://registry.yarnpkg.com/got/-/got-14.4.1.tgz#23966728d8bc8606de3841ba6db9f81518d39a24"
+  integrity sha512-IvDJbJBUeexX74xNQuMIVgCRRuNOm5wuK+OC3Dc2pnSoh1AOmgc7JVj7WC+cJ4u0aPcO9KZ2frTXcqK4W/5qTQ==
   dependencies:
     "@sindresorhus/is" "^6.3.1"
     "@szmarczak/http-timer" "^5.0.1"
@@ -443,6 +443,7 @@ got@^14.3.0:
     lowercase-keys "^3.0.0"
     p-cancelable "^4.0.1"
     responselike "^3.0.0"
+    type-fest "^4.19.0"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -922,6 +923,11 @@ touch@^3.1.0:
   integrity sha512-WBx8Uy5TLtOSRtIq+M03/sKDrXCLHxwDcquSP2c43Le03/9serjQBIztjRz6FkJez9D/hleyAXTBGLwwZUw9lA==
   dependencies:
     nopt "~1.0.10"
+
+type-fest@^4.19.0:
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.20.0.tgz#019becf5a97cd58eee93f592f0961859a74482a7"
+  integrity sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==
 
 type-is@~1.6.18:
   version "1.6.18"
