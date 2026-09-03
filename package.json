@@ -30,7 +30,7 @@
   "dependencies": {
     "cheerio": "^1.2.0",
     "cors": "^2.8.6",
-    "express": "^4.22.2",
+    "express": "^5.2.1",
     "got": "^14.6.6",
     "slugify": "^1.6.9",
     "ytdl-core": "^4.11.5"
